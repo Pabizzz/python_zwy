@@ -1,0 +1,3 @@
+# 获得账号
+getMobileByAccount:
+  - account: admin

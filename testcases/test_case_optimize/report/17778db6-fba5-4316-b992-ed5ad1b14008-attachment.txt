@@ -1,0 +1,3 @@
+[2023-01-21 14:42:06,229][conftest.py 36][INFO]: 开始执行测试用例~
+[2023-01-21 14:42:06,409][response_util.py 13][INFO]: 接口返回的内容>>>:{"code": 0, "data": {"userId": 120, "accessToken": "c72007169dc4406bb84c28ad94cf6b02", "refreshToken": "89ec25cff35e489fb7f299955776f479", "expiresTime": 1674285124593}, "msg": ""}
+[2023-01-21 14:42:06,409][conftest.py 38][INFO]: 测试用例执行完毕~

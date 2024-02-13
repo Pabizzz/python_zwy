@@ -1,0 +1,4 @@
+INFO     log:conftest.py:36 开始执行测试用例~
+INFO     log:conftest.py:38 测试用例执行完毕~
+INFO     log:conftest.py:36 开始执行测试用例~
+INFO     log:conftest.py:38 测试用例执行完毕~

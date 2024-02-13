@@ -1,0 +1,113 @@
+hero: # 对象
+  name: Pabi
+  word: 好看
+  Hp: 445.5
+
+
+heros_name: # 数组
+  - Pabi
+  - 敖老师
+  - 梅西
+
+
+heros: # 组合
+  - name: Pabi
+    word: 好看
+    Hp: 440
+
+
+heros_name_list: # 数组嵌套
+  - - Pabi
+    - 敖老师
+    - 梅西
+
+
+heros_name_word:
+  - - Pabi
+    - 好看
+  - - 敖老师
+    - 帅气
+
+#[{name: login, request:{url:hhh, }},{},{}]
+#  {name:login, request:{url:xxx, method:post}}
+# 字典列表
+getMobileByAccount:
+  - account: admin
+
+login_test:
+  - name: login
+    request:
+#      url: http://43.139.182.137:48080/admin-api/system/auth/login
+      url: /system/auth/login
+      method: POST
+      headers:
+        Accept: application/json, text/plain, */*
+        Accept-Encoding: gzip, deflate
+        Accept-Language: zh-CN,zh;q=0.9
+        Connection: keep-alive
+        Content-Length: '156'
+        Content-Type: application/json;charset=UTF-8
+        Host: 43.139.182.137:48080
+        Origin: http://43.139.182.137:48080
+        Referer: http://43.139.182.137:48080/admin-ui/login?redirect=%2Findex
+        tenant-id: '1'
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+      json:
+        username: autotest
+        password: 123456
+        heros: # 组合
+          - name: Pabi
+            word: 好看
+            Hp: 440
+
+
+login:
+  - name: login
+    request:
+      url: /system/auth/login
+      method: POST
+      headers:
+        Accept: application/json, text/plain, */*
+        Accept-Encoding: gzip, deflate
+        Accept-Language: zh-CN,zh;q=0.9
+        Connection: keep-alive
+        Content-Length: '156'
+        Content-Type: application/json;charset=UTF-8
+        Host: 43.139.182.137:48080
+        Origin: http://43.139.182.137:48080
+        Referer: http://43.139.182.137:48080/admin-ui/login?redirect=%2Findex
+        tenant-id: '1'
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+      json:
+        username: autotest
+        password: 123456
+
+
+select:
+  - name: select-动态
+    request:
+      url: /system/user/page
+      method: GET
+      headers:
+        Accept: application/json, text/plain, */*
+        Accept-Encoding: gzip, deflate
+        Accept-Language: zh-CN,zh;q=0.9
+        Connection: keep-alive
+#        Authorization:
+        Host: 43.139.182.137:48080
+        Referer: http://43.139.182.137:48080/admin-ui/login?redirect=%2Findex
+        tenant-id: '1'
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+      params:
+        pageNo: 1
+        pageSize: 10
+
+
+# 数组
+person:
+  - name: 上海-${random_name()}-测试
+    age: ${age()}
+    sex: 女
+  - name: 上海-${random_name()}-测试
+    age: ${age()}
+    sex: 女

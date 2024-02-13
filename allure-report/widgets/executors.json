@@ -1,0 +1,1 @@
+[{"name":"Jenkins","type":"jenkins","url":"http://43.139.182.137:8090/","buildOrder":12,"buildName":"ApiTest #12","buildUrl":"http://43.139.182.137:8090/job/ApiTest/12/","reportName":"AllureReport","reportUrl":"http://43.139.182.137:8090/job/ApiTest/12/allure"}]
