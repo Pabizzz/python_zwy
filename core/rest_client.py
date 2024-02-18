@@ -37,13 +37,13 @@ class RestClient:
     # 封装request方法
     def request(self, method, url, headers, json, data, params, **kwargs):
         if method == "POST":
-            return requests.post(url=self.base_url + url, headers=headers, json=json, data=None, params=None, **kwargs)
+            return requests.post(url=self.base_url + url, headers=headers, json=json, data=None, params=None, verify=False, **kwargs)
         if method == "GET":
-            return requests.get(url=self.base_url + url, headers=headers, json=None, data=None, params=params, **kwargs)
+            return requests.get(url=self.base_url + url, headers=headers, json=None, data=None, params=params, verify=False, **kwargs)
         if method == "PUT":
-            return requests.put(url=self.base_url + url, headers=headers, json=None, data=data, params=None, **kwargs)
+            return requests.put(url=self.base_url + url, headers=headers, json=None, data=data, params=None, verify=False, **kwargs)
         if method == "DELETE":
-            return requests.delete(url=self.base_url + url, headers=headers, json=None, data=None, params=None, **kwargs)
+            return requests.delete(url=self.base_url + url, headers=headers, json=None, data=None, params=None, verify=False, **kwargs)
 
     def request_log(self, method, url, headers, json, data, params, **kwargs):
         # 打印日志
