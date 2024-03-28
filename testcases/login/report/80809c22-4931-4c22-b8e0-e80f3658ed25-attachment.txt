@@ -1,0 +1,3 @@
+INFO     log:conftest.py:36 开始执行测试用例~
+INFO     log:response_util.py:13 接口返回的内容>>>:{"mobile": "15677889763"}
+INFO     log:conftest.py:38 测试用例执行完毕~
